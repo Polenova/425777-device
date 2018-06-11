@@ -8,49 +8,44 @@
       <header class="header">
         <nav class="header-navigation">
           <a class="header-logo">
-            <img src="img/index-logo.svg" alt="Логотип магазина «Device»">
+            <img src="img/index-logo.svg" alt="Логотип магазина Device">
           </a>
+          <form class="header-search">
+            <!-- Тут будет форма для поиска -->
+          </form>
           <ul class="header-navigation-user">
-            <li>Поиск по сайту</li>
-            <!-- Тут будет форма ввода -->
-            <li><a href="#"></a></li>
-            <!--Тут будет Фио пользователя</p>-->
-            <li><button class="button">Войти</button></li>
-            <li><a href="#">Сравнить</a></li>
-            <li><a href="#">Корзина</a></li>
+            <li class="header-navigation-link"><a href="#">Войти</a></li>
+          </ul>
+          <ul class="header-navigation-store">
+            <li class="header-navigation-link"><a href="#">Сравнить</a></li>
+            <li class="header-navigation-link"><a href="#">Корзина</a></li>
           </ul>
           <ul class="header-navigation-site">
-            <li><a class="button" href="#">Каталог товаров <span>+</span></a>
-              <ul class="header-category">
-                <li><a href="#">Виртуальная реальность</a></li>
-                <li><a href="#">Фитнес-браслеты</a></li>
-                <li><a href="#">Квадрокоптеры</a></li>
-                <li><a href="#">Моноподы для селфи</a></li>
-                <li><a href="#">Умные часы</a></li>
-                <li><a href="#">Экшн-камеры</a></li>
+            <li class="header-site-link"><a href="#">Каталог товаров</a>
+              <ul class="header-catalog">
+                <li class="header-catalog-item"><a href="#">Виртуальная реальность</a></li>
+                <li class="header-catalog-item"><a href="#">Фитнес-браслеты</a></li>
+                <li class="header-catalog-item"><a href="#">Квадрокоптеры</a></li>
+                <li class="header-catalog-item"><a href="#">Моноподы для селфи</a></li>
+                <li class="header-catalog-item"><a href="#">Умные часы</a></li>
+                <li class="header-catalog-item"><a href="#">Экшн-камеры</a></li>
               </ul>
             </li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Гарантия</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li class="header-site-link"><a href="#">Доставка</a></li>
+            <li class="header-site-link"><a href="#">Гарантия</a></li>
+            <li class="header-site-link"><a href="#">Контакты</a></li>
           </ul>
         </nav>
       </header>
       <main class="container">
         <h1 class="visually-hidden">Device - интернет магазин гаджетов</h1>
 
-        <article class="slider">
+        <section class="slider">
           <h2 class="visually-hidden">Популярные товары</h2>
           <ul>
             <li class="slider-item">
-              <span>—</span>
-              <span>01</span>
-              <figure>
-                <img src="http://placehold.it/150x100" alt="Монопод">
-                <figcaption>
-                  <p>Делай селфи, как Бен Стиллер!</p>
-                </figcaption>
-              </figure>
+              <img src="http://placehold.it/150x100" alt="Монопод">
+              <b>Делай селфи, как Бен Стиллер!</b>
               <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего пять килограмм.</p>
               <table>
                 <tr>
@@ -67,14 +62,8 @@
               <a class="button" href="#">Подробнее</a>
             </li>
             <li class="slider-item">
-              <span>—</span>
-              <span>02</span>
-              <figure>
-                <img src="http://placehold.it/150x100" alt="Монопод">
-                <figcaption>
-                  <p>Худеем правильно!</p>
-                </figcaption>
-              </figure>
+              <img src="http://placehold.it/150x100" alt="Монопод">
+              <b>Худеем правильно!</b>
               <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
               <table>
                 <tr>
@@ -87,14 +76,8 @@
               <a class="button" href="#">Подробнее</a>
             </li>
             <li class="slider-item">
-              <span>—</span>
-              <span>03</span>
-              <figure>
-                <img src="http://placehold.it/150x100" alt="Монопод">
-                <figcaption>
-                  <p>Порхает как бабочка, жалит как пчела!</p>
-                </figcaption>
-              </figure>
+              <img src="http://placehold.it/150x100" alt="Монопод">
+              <b>Порхает как бабочка, жалит как пчела!</b>
               <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру</p>
               <table>
                 <tr>
@@ -113,7 +96,7 @@
           <span></span>
           <span></span>
           <span></span>
-        </article>
+        </section>
 
         <section class="category">
           <h2 class="visually-hidden">Категории товаров</h2>
@@ -153,68 +136,67 @@
 
         <section class="supply">
           <h2 class="visually-hidden">Производители</h2>
-          <fiure class="supply-item"><img src="http://placehold.it/150x100" alt="DJI"></fiure>
-          <fiure class="supply-item"><img src="http://placehold.it/150x100" alt="SP Gadgets"></fiure>
-          <fiure class="supply-item"><img src="http://placehold.it/150x100" alt="Go Pro"></fiure>
-          <fiure class="supply-item"><img src="http://placehold.it/150x100" alt="Vive"></fiure>
+          <ul>
+            <li class="supply-item"><img src="http://placehold.it/150x100" alt="DJI"></li>
+            <li class="supply-item"><img src="http://placehold.it/150x100" alt="SP Gadgets"></li>
+            <li class="supply-item"><img src="http://placehold.it/150x100" alt="Go Pro"></li>
+            <li class="supply-item"><img src="http://placehold.it/150x100" alt="Vive"></li>
+          </ul>
+
         </section>
 
         <section class="info">
-          <h2>О нас</h2>
-          <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-          <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями.</p>
-          <a href="#" class="button">Подробнее о нас</a>
-        </section>
-
-        <section class="contacts">
+          <div class="info-about">
+            <h2>О нас</h2>
+            <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+            <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями.</p>
+            <a href="#" class="button">Подробнее о нас</a>
+          </div>
+          <div class="info-contacts">
             <h2>Контакты</h2>
             <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность техники. Всякое бывает.</p>
             <a href="#"><img src="http://placehold.it/150x100" alt="Карта"></a>
             <a href="#" class="button">Напишите нам</a>
-          </section>
+          </div>
+        </section>
       </main>
       <footer>
-        <div class="footer-navigation">
-          <a class="footer-logo">
-            <img src="img/index-logo.svg" alt="Логотип магазина «Device»">
-          </a>
-          <ul class="footer-navigation-user">
-            <li><a href="#"></a></li>
-            <!--Тут будет Фио пользователя</p>-->
-            <li><button class="button">Войти</button></li>
-            <li><a href="#">Сравнить</a></li>
-            <li><a href="#">Корзина</a></li>
-          </ul>
-          <ul class="footer-navigation-site">
-            <li class="footer-contacts">г. Москва, ул. Строителей, 15</li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Гарантия</a></li>
-            <li><a href="#">Контакты</a></li>
-            <li>Тел.: +7 (495) 495-95-95</li>
-          </ul>
+        <a class="footer-logo">
+          <img src="img/index-logo.svg" alt="Логотип магазина «Device»">
+        </a>
+        <ul class="footer-navigation-user">
+          <li class="footer-navigation-link"><a href="#">Войти</a></li>
+        </ul>
+        <ul class="footer-navigation-store">
+          <li class="footer-navigation-link"><a href="#">Сравнить</a></li>
+          <li class="footer-navigation-link"><a href="#">Корзина</a></li>
+        </ul>
+        <div class="footer-adress">
+          <p>г. Москва, ул. Строителей, 15</p>
         </div>
-        <span>--</span>
+        <ul class="footer-navigation-site">
+          <li class="footer-site-link"><a href="#">Доставка</a></li>
+          <li class="footer-site-link"><a href="#">Гарантия</a></li>
+          <li class="footer-site-link"><a href="#">Контакты</a></li>
+        </ul>
+        <div>
+          <p>Тел.: +7 (495) 495-95-95</p>
+        </div>
         <div class="footer-social">
           <ul>
             <li><a class="social-button button-vk" href="#"></a></li>
             <li><a class="social-button button-instagram" href="#"></a></li>
             <li><a class="social-button button-twitter" href="#"></a></li>
           </ul>
-          <p class="footer-copyright">
-            <a class="button" href="https://htmlacademy.ru"><img src="" alt="HTML Academy"></a>
-      </div>
+        </div>
+        <p class="footer-copyright">
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="" alt="HTML Academy"></a>
+        </p>
       </footer>
-
-      <section class="modal modal-login">
-        <h2>Личный кабинет</h2>
-        <p>Введите свой логин и пароль.</p>
-        <!-- Здесь будет форма -->
-        <span class="modal-close">x</span>
-      </section>
 
       <section class="modal modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <span class="modal-close">x</span>
+        <span class="modal-close"></span>
       </section>
   </body>
 </html>
