@@ -10,10 +10,13 @@
         <a class="header-logo">
           Device
         </a>
-        <form class="header-search" action="https://echo.htmlacademy.ru" method="post">
-          <label class="visually-hidden" for="header-search">Поиск по сайту</label>
+        <div class="header-search">
+          <form class="header-search-form" action="https://echo.htmlacademy.ru" method="get">
+            <label class="visually-hidden" for="header-search">Поиск по сайту</label>
             <input type="search" name="header-search" id="header-search" placeholder="Поиск по сайту">
-        </form>
+            <button class="header-search-button" type="submit">Найти</button>
+          </form>
+        </div>
         <ul class="header-navigation-user">
           <li class="header-navigation-item">
             <a class="header-navigation-link" href="#">Войти</a>
@@ -242,9 +245,9 @@
           <a class="footer-navigation-link" href="#">Корзина</a>
         </li>
       </ul>
-      <address class="footer-address">
+      <p class="footer-address">
         г. Москва, ул. Строителей, 15
-      </address>
+      </p>
       <ul class="footer-navigation-site">
         <li class="footer-site-item">
           <a class="footer-site-link" href="#">Доставка</a>
@@ -260,13 +263,13 @@
       <div class="footer-social">
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="social-button button-vk" href="#">VK</a>
+            <a class="social-button button-vk" href="#"><span class="visually-hidden">VK</span></a>
           </li>
           <li class="footer-social-item">
-            <a class="social-button button-instagram" href="#">Instagram</a>
+            <a class="social-button button-instagram" href="#"><span class="visually-hidden">Instagram</span></a>
           </li>
           <li class="footer-social-item">
-            <a class="social-button button-twitter" href="#">Twitter</a>
+            <a class="social-button button-twitter" href="#"><span class="visually-hidden">Twitter</span></a>
           </li>
         </ul>
       </div>
@@ -278,7 +281,7 @@
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <img class="modal-map-img" src="img/map-big.png" width="960" height="559" alt="Магазин расположен по адресу ул.Строителей, 15">
-      <button class="modal-close">Закрыть окно</button>
+      <button class="modal-close"><span class="visually-hidden">Закрыть окно</span></button>
     </section>
 
     <section class="modal feedback">
@@ -294,11 +297,11 @@
         </p>
         <p class="feedback-item">
           <label for="feedback-text">Текст письма:</label>
-          <input id="feedback-text" type="text" name="text" placeholder="В свободной форме">
+          <textarea id="feedback-text" type="text" name="text" placeholder="В свободной форме"></textarea>
         </p>
         <button class="button" type="submit">Отправить</button>
       </form>
-      <button class="modal-close">Закрыть окно</button>
+      <button class="modal-close"><span class="visually-hidden">Закрыть окно</span></button>
     </section>
   </body>
 </html>
