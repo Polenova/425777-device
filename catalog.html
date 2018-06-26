@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
@@ -14,7 +16,7 @@
           <form class="header-search-form" action="https://echo.htmlacademy.ru" method="get">
             <label class="visually-hidden" for="header-search">Поиск по сайту</label>
             <input type="search" name="header-search" id="header-search" placeholder="Поиск по сайту">
-            <button class="header-search-button" type="submit">Найти</button>
+            <button class="header-search-button" type="submit"><span>Найти</span></button>
           </form>
         </div>
         <ul class="header-navigation-user">
@@ -34,7 +36,7 @@
           </li>
         </ul>
         <ul class="header-navigation-site">
-          <li class="header-site-item"><a href="#">Каталог товаров</a>
+          <li class="header-site-item"><a class="header-site-link" href="#">Каталог товаров</a>
             <ul class="header-catalog">
               <li class="header-catalog-item">
                 <a class="header-catalog-link" href="#">Виртуальная реальность</a>
@@ -135,7 +137,7 @@
         <h2 class="sort-caption">Сортировка:</h2>
         <ul class="sort-list">
           <li class="sort-item">
-            <a class="sort-link" href="#">По цене</a>
+            <a class="sort-link sort-link-current" href="#">По цене</a>
           </li>
           <li class="sort-item">
             <a class="sort-link" href="#">По типу</a>
@@ -153,7 +155,7 @@
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Список моноподов</h2>
-        <ul>
+        <ul class="catalog-list">
           <li class="catalog-item">
             <img class="catalog-img" src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
             <h3 class="catalog-caption">
@@ -202,10 +204,10 @@
       </section>
       <ul class="pagination-list">
         <li class="pagination-item">
-          <a class="pagination-link" href="#">Назад</a>
+          <a class="pagination-link pagination-link-back " href="#">Назад</a>
         </li>
-        <li class="pagination-item pagination-item-current">
-          <a class="pagination-link" href="#">1</a>
+        <li class="pagination-item">
+          <a class="pagination-link pagination-link-current" href="#">1</a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">2</a>
@@ -214,7 +216,7 @@
           <a class="pagination-link" href="#">3</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">Вперед</a>
+          <a class="pagination-link pagination-link-forward" href="#">Вперед</a>
         </li>
       </ul>
     </main>
