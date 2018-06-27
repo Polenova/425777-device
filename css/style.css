@@ -406,8 +406,6 @@ a {
   color: rgba(0,0,0,0.1);
 }
 
-.breadcrumbs-link
-
 .filter-caption,
 .sort-caption {
   font-family: 'Gilroy', Arial, sans-serif;
@@ -428,7 +426,6 @@ a {
 .filter-list,
 .sort-list {
   list-style: none;
-
 }
 
 .filter-caption {
